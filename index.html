@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="SweetCraft Bakery — Handcrafted cakes baked fresh for every occasion. Order online with easy Google Form checkout." />
+    <title>SweetCraft Bakery — Handcrafted Cakes</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎂</text></svg>" />
+  </head>
+  <body>
+
+    <!-- HEADER -->
+    <header class="header">
+      <nav class="nav">
+        <a href="index.html" class="nav-logo">
+          <div class="nav-logo-icon">🎂</div>
+          <div class="nav-logo-text">
+            <span class="nav-logo-name">SweetCraft</span>
+            <span class="nav-logo-tagline">Artisan Bakery</span>
+          </div>
+        </a>
+        <ul class="nav-links">
+          <li><a href="#products">Our Cakes</a></li>
+          <li><a href="#testimonials">Reviews</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#products" class="nav-cta">Order Now</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-content">
+        <div class="hero-badge">🌟 Freshly Baked Daily</div>
+        <h1 class="hero-title">
+          Cakes crafted with<br /><em>love & butter</em>
+        </h1>
+        <p class="hero-subtitle">
+          Every celebration deserves a showstopper. We handcraft custom cakes
+          using premium ingredients — baked fresh to order, delivered with joy.
+        </p>
+        <div class="hero-actions">
+          <a href="#products" class="btn-primary">Browse Our Cakes</a>
+          <a href="#testimonials" class="btn-secondary">Read Reviews</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-number">500+</span>
+            <span class="stat-label">Happy customers</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">12+</span>
+            <span class="stat-label">Flavours</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">4.9★</span>
+            <span class="stat-label">Average rating</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-img-wrap">
+          <img
+            src="https://images.unsplash.com/photo-1621303837174-89787a7d4729?w=700&q=85"
+            alt="Beautiful layered cake"
+          />
+        </div>
+        <div class="hero-float-card">
+          <div class="hero-float-card-icon">🎂</div>
+          <div class="hero-float-card-text">
+            <strong>Order Ready in 24hrs</strong>
+            <span>Same-day delivery available</span>
+          </div>
+        </div>
+        <div class="hero-float-badge">✨ 100% Fresh</div>
+      </div>
+    </section>
+
+    <!-- FEATURES STRIP -->
+    <section class="features-strip">
+      <div class="features-strip-inner">
+        <div class="feature-item">
+          <div class="feature-icon">🧁</div>
+          <div class="feature-title">Baked to Order</div>
+          <p class="feature-desc">No pre-made cakes. Every order is freshly crafted after you place it.</p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">🌿</div>
+          <div class="feature-title">Premium Ingredients</div>
+          <p class="feature-desc">Belgian chocolate, Madagascar vanilla, and locally sourced fruits.</p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">🚚</div>
+          <div class="feature-title">Free Delivery</div>
+          <p class="feature-desc">Free same-day delivery on orders above ₹999 within 15 km.</p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon">💌</div>
+          <div class="feature-title">Custom Messages</div>
+          <p class="feature-desc">Add a personalised message or topper to make it extra special.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRODUCTS SECTION -->
+    <section class="products-section" id="products">
+      <div class="section-header">
+        <span class="section-label">✦ Our Signature Collection ✦</span>
+        <h2 class="section-title">Every slice tells a story</h2>
+        <p class="section-desc">
+          Browse our handcrafted cakes. Click any cake to see full details, or
+          hit "Order Now" to place your order instantly.
+        </p>
+      </div>
+
+      <!-- Filter Tabs -->
+      <div class="filter-tabs">
+        <button class="filter-tab active" data-filter="all">All Cakes</button>
+        <button class="filter-tab" data-filter="Bestseller">Bestseller</button>
+        <button class="filter-tab" data-filter="Premium">Premium</button>
+        <button class="filter-tab" data-filter="Seasonal">Seasonal</button>
+        <button class="filter-tab" data-filter="Classic">Classic</button>
+        <button class="filter-tab" data-filter="Artisan">Artisan</button>
+      </div>
+
+      <div class="products-grid" id="productsGrid">
+        <!-- Populated by script.js -->
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="testimonials-section" id="testimonials">
+      <div class="section-header">
+        <span class="section-label">✦ Customer Love ✦</span>
+        <h2 class="section-title">What our customers say</h2>
+        <p class="section-desc">Real reviews from real celebrations. We let the cake do the talking.</p>
+      </div>
+
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"The Chocolate Dream was absolutely incredible. My entire family couldn't stop talking about it. Will definitely order again for every birthday!"</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">👩</div>
+            <div>
+              <div class="testimonial-name">Priya Sharma</div>
+              <div class="testimonial-since">Customer since 2023</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"Ordered the Red Velvet Royale for our anniversary. It arrived beautifully packaged and tasted even better than it looked. Absolutely stunning!"</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">👨</div>
+            <div>
+              <div class="testimonial-name">Rohan Mehta</div>
+              <div class="testimonial-since">Customer since 2024</div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"The Mango Tango was a hit at our office party! So fresh, not overly sweet — just perfect. The delivery was on time and the packaging was gorgeous."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">👩‍💼</div>
+            <div>
+              <div class="testimonial-name">Ananya Krishnan</div>
+              <div class="testimonial-since">Customer since 2024</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer" id="contact">
+      <div class="footer-inner">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <div class="footer-brand-name">🎂 Sample </div>
+            <p class="footer-brand-desc">
+              Handcrafted cakes baked with love for every milestone. From birthdays to weddings, we make every celebration sweeter.
+            </p>
+            <p style="font-size:13px;color:rgba(253,246,238,0.5);">📍 Bengaluru, Karnataka &nbsp;|&nbsp; 📞 +91 98765 43210</p>
+          </div>
+          <div class="footer-col">
+            <div class="footer-col-title">Quick Links</div>
+            <ul class="footer-links">
+              <li><a href="#products">Our Cakes</a></li>
+              <li><a href="#testimonials">Reviews</a></li>
+              <li><a href="#contact">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <div class="footer-col-title">Policies</div>
+            <ul class="footer-links">
+              <li><a href="#">Delivery Info</a></li>
+              <li><a href="#">Refund Policy</a></li>
+              <li><a href="#">Custom Orders</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr class="footer-divider" />
+        <div class="footer-bottom">
+          <span>© 2025 SweetCraft Bakery. All rights reserved.</span>
+          <span>Made with 🧁 and JavaScript</span>
+        </div>
+      </div>
+    </footer>
+
+    <!-- SCROLL TO TOP -->
+    <button class="scroll-top" id="scrollTopBtn" aria-label="Scroll to top">↑</button>
+
+    <!-- SCRIPTS -->
+    <script src="products.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="View cake details and place your order at SweetCraft Bakery." />
+    <title>Cake Details — SweetCraft Bakery</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎂</text></svg>" />
+  </head>
+  <body>
+
+    <!-- HEADER -->
+    <header class="header">
+      <nav class="nav">
+        <a href="index.html" class="nav-logo">
+          <div class="nav-logo-icon">🎂</div>
+          <div class="nav-logo-text">
+            <span class="nav-logo-name">SweetCraft</span>
+            <span class="nav-logo-tagline">Artisan Bakery</span>
+          </div>
+        </a>
+        <ul class="nav-links">
+          <li><a href="index.html#products">Our Cakes</a></li>
+          <li><a href="index.html#testimonials">Reviews</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+          <li><a href="index.html#products" class="nav-cta">Order Now</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- DETAIL PAGE -->
+    <main class="detail-page">
+
+      <!-- Breadcrumb -->
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a>
+        <span class="breadcrumb-sep">›</span>
+        <a href="index.html#products">Our Cakes</a>
+        <span class="breadcrumb-sep">›</span>
+        <span id="bcProduct">Loading…</span>
+      </nav>
+
+      <!-- Detail content populated by script.js -->
+      <div id="detailContent">
+        <p class="loading">🎂 Fetching your cake details…</p>
+      </div>
+
+    </main>
+
+    <!-- RELATED PRODUCTS -->
+    <section class="related-section">
+      <div class="section-header">
+        <span class="section-label">✦ You May Also Love ✦</span>
+        <h2 class="section-title">More sweet creations</h2>
+      </div>
+      <div class="products-grid" id="relatedGrid">
+        <!-- Populated by script.js -->
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer" id="contact">
+      <div class="footer-inner">
+        <div class="footer-top">
+          <div class="footer-brand">
+            <div class="footer-brand-name">🎂 SweetCraft Bakery</div>
+            <p class="footer-brand-desc">
+              Handcrafted cakes baked with love for every milestone. From birthdays to weddings, we make every celebration sweeter.
+            </p>
+            <p style="font-size:13px;color:rgba(253,246,238,0.5);">📍 Bengaluru, Karnataka &nbsp;|&nbsp; 📞 +91 98765 43210</p>
+          </div>
+          <div class="footer-col">
+            <div class="footer-col-title">Quick Links</div>
+            <ul class="footer-links">
+              <li><a href="index.html#products">Our Cakes</a></li>
+              <li><a href="index.html#testimonials">Reviews</a></li>
+              <li><a href="index.html#contact">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <div class="footer-col-title">Policies</div>
+            <ul class="footer-links">
+              <li><a href="#">Delivery Info</a></li>
+              <li><a href="#">Refund Policy</a></li>
+              <li><a href="#">Custom Orders</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr class="footer-divider" />
+        <div class="footer-bottom">
+          <span>© 2025 SweetCraft Bakery. All rights reserved.</span>
+          <span>Made with 🧁 and JavaScript</span>
+        </div>
+      </div>
+    </footer>
+
+    <!-- SCROLL TO TOP -->
+    <button class="scroll-top" id="scrollTopBtn" aria-label="Scroll to top">↑</button>
+
+    <!-- SCRIPTS -->
+    <script src="products.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
