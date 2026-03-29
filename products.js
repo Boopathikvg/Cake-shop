@@ -12,7 +12,7 @@ const products = [
     tag: "Premium",
     emoji: "❤️",
     image: "https://i.pinimg.com/736x/47/98/2f/47982f68c4b66118db1c32275e440dc3.jpg",
-    thumb: "/images/Red Velvet Royale-1.jpg",
+    thumb: "images/Red Velvet Royale-1.jpg",
   },
 
   {
