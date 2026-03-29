@@ -1,52 +1,5 @@
 const products = [
-  {
-    id: "choco-dream",
-    name: "Chocolate Dream",
-    shortDesc: "Rich triple-layer chocolate indulgence",
-    description:
-      "A decadent three-layer masterpiece crafted from premium Belgian dark chocolate. Each layer is soaked in espresso syrup and filled with silky ganache, then finished with hand-piped chocolate rosettes and a dusting of cocoa. Perfect for birthdays, anniversaries, or any occasion that deserves pure luxury.",
-    price: 849,
-    weight: "1 kg",
-    serves: "8–10",
-    tag: "Bestseller",
-    emoji: "🍫",
-    image:
-      "https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=600&q=80",
-    thumb:
-      "https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=400&q=80",
-  },
-  {
-    id: "strawberry-bliss",
-    name: "Strawberry Bliss",
-    shortDesc: "Fresh strawberries on cloud-like cream",
-    description:
-      "Layers of light vanilla sponge, whipped mascarpone cream, and hand-picked fresh strawberries come together in this summer favourite. Topped with glazed whole strawberries and delicate white chocolate curls, it's as beautiful as it is delicious. A guaranteed crowd-pleaser at any celebration.",
-    price: 799,
-    weight: "1 kg",
-    serves: "8–10",
-    tag: "Fan Favourite",
-    emoji: "🍓",
-    image:
-      "https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=600&q=80",
-    thumb:
-      "https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=400&q=80",
-  },
-  {
-    id: "vanilla-cloud",
-    name: "Vanilla Cloud",
-    shortDesc: "Airy, elegant, timeless vanilla perfection",
-    description:
-      "Our classic Vanilla Cloud is made with Madagascar bourbon vanilla beans folded into feather-light chiffon layers. Frosted with a silky Swiss meringue buttercream and adorned with edible gold leaf and pearl sprinkles. Simple, sophisticated, and simply unforgettable.",
-    price: 749,
-    weight: "1 kg",
-    serves: "8–10",
-    tag: "Classic",
-    emoji: "🤍",
-    image:
-      "https://images.unsplash.com/photo-1535141192574-5d4897c12636?w=600&q=80",
-    thumb:
-      "https://images.unsplash.com/photo-1535141192574-5d4897c12636?w=400&q=80",
-  },
+
   {
     id: "red-velvet-royale",
     name: "Red Velvet Royale",
@@ -58,41 +11,112 @@ const products = [
     serves: "8–10",
     tag: "Premium",
     emoji: "❤️",
-    image:
-      "https://images.unsplash.com/photo-1616541823729-00fe0aacd32c?w=600&q=80",
-    thumb:
-      "https://images.unsplash.com/photo-1616541823729-00fe0aacd32c?w=400&q=80",
+    image: "/images/Red Velvet Royale.jpg",
+    thumb: "/images/Red Velvet Royale-1.jpg",
   },
+
   {
-    id: "mango-tango",
-    name: "Mango Tango",
-    shortDesc: "Tropical Alphonso mango sunshine cake",
+    id: "black-forest-cake",
+    name: "Black Forest Cake",
+    shortDesc: "Chocolate layers with cherries & cream",
     description:
-      "Celebrate the king of fruits with our Mango Tango — soft layers of saffron sponge, luscious Alphonso mango mousse, and fresh mango coulis. Decorated with mango rosettes and toasted coconut flakes. A tropical escape in every slice, best enjoyed chilled.",
-    price: 849,
+      "A timeless classic made with rich chocolate sponge layered with fresh whipped cream and juicy cherries. Topped with chocolate shavings and cherries, this cake delivers the perfect balance of sweetness and freshness.",
+    price: 750,
     weight: "1 kg",
     serves: "8–10",
-    tag: "Seasonal",
-    emoji: "🥭",
-    image:
-      "https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?w=600&q=80",
-    thumb:
-      "https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?w=400&q=80",
+    tag: "Best Seller",
+    emoji: "🍒",
+    image: "/images/Black Forest Cake.jpg",
+    thumb: "/images/Black Forest Cake-1.jpg",
   },
+
   {
-    id: "blueberry-forest",
-    name: "Blueberry Forest",
-    shortDesc: "Wild blueberry burst with dark sponge",
+    id: "white-forest-cake",
+    name: "White Forest Cake",
+    shortDesc: "Vanilla sponge with white chocolate flakes",
     description:
-      "Dark chocolate sponge layers meet a vibrant blueberry compote and whipped lemon cream cheese frosting. Crowned with fresh blueberries, dark chocolate shards, and rosemary sprigs, this cake has a dramatic, moody beauty. The contrast of sweet, tart, and earthy is truly extraordinary.",
-    price: 879,
+      "A delightful twist on the classic forest cake, featuring soft vanilla sponge layers with whipped cream and cherries. Decorated with white chocolate shavings for a light, creamy experience.",
+    price: 780,
     weight: "1 kg",
     serves: "8–10",
-    tag: "Artisan",
-    emoji: "🫐",
-    image:
-      "https://images.unsplash.com/photo-1464305795204-6f5bbfc7fb81?w=600&q=80",
-    thumb:
-      "https://images.unsplash.com/photo-1464305795204-6f5bbfc7fb81?w=400&q=80",
+    tag: "Classic",
+    emoji: "🤍",
+    image: "/images/White Forest Cake.jpg",
+    thumb: "/images/White Forest Cake-1.jpg",
   },
+
+  {
+    id: "choco-truffle-cake",
+    name: "Choco Truffle Cake",
+    shortDesc: "Rich chocolate ganache indulgence",
+    description:
+      "A dream for chocolate lovers — layers of moist chocolate sponge filled and coated with silky smooth chocolate ganache. Deep, rich, and irresistibly indulgent.",
+    price: 820,
+    weight: "1 kg",
+    serves: "8–10",
+    tag: "Premium",
+    emoji: "🍫",
+    image: "/images/Choco Truffle Cake.jpg",
+    thumb: "/images/Choco Truffle Cake-1.jpg",
+  },
+
+  {
+    id: "butterscotch-cake",
+    name: "Butterscotch Cake",
+    shortDesc: "Crunchy caramel with cream layers",
+    description:
+      "A delicious blend of buttery caramel flavor and crunchy praline. Soft sponge layered with butterscotch cream and topped with caramel drizzle and crispy bits.",
+    price: 700,
+    weight: "1 kg",
+    serves: "8–10",
+    tag: "Popular",
+    emoji: "🍯",
+    image: "/images/Butterscotch Cake.jpg",
+    thumb: "/images/Butterscotch Cake-1.jpg",
+  },
+
+  {
+    id: "pineapple-cake",
+    name: "Pineapple Cake",
+    shortDesc: "Fresh pineapple with whipped cream",
+    description:
+      "A refreshing and light cake made with soft sponge layers, whipped cream, and juicy pineapple chunks. Perfect for those who love fruity flavors.",
+    price: 650,
+    weight: "1 kg",
+    serves: "8–10",
+    tag: "Fresh",
+    emoji: "🍍",
+    image: "/images/Pineapple Cake.jpg",
+    thumb: "/images/Pineapple Cake-1.jpg",
+  },
+
+  {
+    id: "grape-cake",
+    name: "Grape Cake",
+    shortDesc: "Sweet grape flavor with creamy layers",
+    description:
+      "A unique and delightful cake infused with fresh grape flavor, layered with soft cream and topped with juicy grapes for a refreshing taste.",
+    price: 680,
+    weight: "1 kg",
+    serves: "8–10",
+    tag: "New",
+    emoji: "🍇",
+    image: "/images/Grape Cake.jpg",
+    thumb: "/images/Grape Cake-1.jpg",
+  },
+  {
+  id: "blueberry-bliss-cake",
+  name: "Blueberry Bliss Cake",
+  shortDesc: "Fresh blueberry layers with creamy frosting",
+  description:
+    "A delightful fusion of soft vanilla sponge layered with rich whipped cream and luscious blueberry compote. Topped with glossy blueberry glaze and fresh berries, this cake offers a perfect balance of sweetness and tangy freshness in every bite.",
+  price: 820,
+  weight: "1 kg",
+  serves: "8–10",
+  tag: "Premium",
+  emoji: "🫐",
+  image: "https://source.unsplash.com/600x400/?blueberry-cake",
+  thumb: "https://source.unsplash.com/400x300/?blueberry-cake",
+}
+
 ];
