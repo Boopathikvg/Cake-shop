@@ -2,9 +2,8 @@
 
 // Google Form URL — replace with your actual form's pre-filled URL
 const GOOGLE_FORM_BASE =
-  "https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform?usp=pp_url&entry.PRODUCT_ENTRY=";
-
-/**
+  "https://docs.google.com/forms/d/e/1FAIpQLSdPwthb9dYEz8Q0mei5AskzzfI_HF_5UzmalnaC95SFRlSISg/viewform?usp=pp_url&entry.1200124981=";
+/*
  * Formats a number as Indian Rupees
  */
 function formatPrice(amount) {
@@ -16,7 +15,7 @@ function formatPrice(amount) {
  */
 function openOrderForm(productName) {
   const url = GOOGLE_FORM_BASE + encodeURIComponent(productName);
-  window.open(url, "_blank", "noopener,noreferrer");
+  window.open(url, "_blank");
 }
 
 /**
