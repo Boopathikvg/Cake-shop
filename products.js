@@ -11,7 +11,7 @@ const products = [
     serves: "8–10",
     tag: "Premium",
     emoji: "❤️",
-    image: "/images/Red Velvet Royale.jpg",
+    image: "Cake-shop/images/Red Velvet Royale.jpg",
     thumb: "/images/Red Velvet Royale-1.jpg",
   },
 
