@@ -145,7 +145,7 @@ const products = [
     tag: "Premium",
     emoji: "🌹",
     image: "https://i.pinimg.com/736x/83/74/7f/83747f4001926c2263b599dc9a0938b1.jpg",
-    thumb: "/images/Rose-milk-cake.jpg",
+    thumb: "https://i.pinimg.com/1200x/34/02/66/34026667369b6188a515bc1deab4c4a7.jpg",
   },
   {
     id: "rainbow-cake",
