@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="SweetCraft Bakery — Handcrafted cakes baked fresh for every occasion. Order online with easy Google Form checkout." />
-    <title>SweetCraft Bakery — Handcrafted Cakes</title>
+    <meta name="description" content="Mr Pastry — Handcrafted cakes baked fresh for every occasion. Order online with easy Google Form checkout." />
+    <title>Mr Pastry — Handcrafted Cakes</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎂</text></svg>" />
   </head>
@@ -14,9 +14,11 @@
     <header class="header">
       <nav class="nav">
         <a href="index.html" class="nav-logo">
-          <div class="nav-logo-icon">🎂</div>
+          <div class="nav-logo-icon nav-logo-img">
+            <img src="images/logo.jpg" alt="Mr Pastry Logo" />
+          </div>
           <div class="nav-logo-text">
-            <span class="nav-logo-name">SweetCraft</span>
+            <span class="nav-logo-name">Mr Pastry</span>
             <span class="nav-logo-tagline">Artisan Bakery</span>
           </div>
         </a>
@@ -34,7 +36,7 @@
       <div class="hero-content">
         <div class="hero-badge">🌟 Freshly Baked Daily</div>
         <h1 class="hero-title">
-          Cakes crafted with<br /><em>love & butter</em>
+          Sweetest Slide of Paradise,<br /><em>Topper with a Smile</em>
         </h1>
         <p class="hero-subtitle">
           Every celebration deserves a showstopper. We handcraft custom cakes
@@ -61,11 +63,30 @@
       </div>
 
       <div class="hero-visual">
-        <div class="hero-img-wrap">
-          <img
-            src="https://images.unsplash.com/photo-1621303837174-89787a7d4729?w=700&q=85"
-            alt="Beautiful layered cake"
-          />
+        <div class="hero-img-wrap carousel-wrap">
+          <!-- Carousel Track -->
+          <div class="carousel-track" id="carouselTrack">
+            <div class="carousel-slide">
+              <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=700&q=85" alt="Chocolate Dream Cake" />
+            </div>
+            <div class="carousel-slide">
+              <img src="https://images.unsplash.com/photo-1621303837174-89787a7d4729?w=700&q=85" alt="Birthday Cake" />
+            </div>
+            <div class="carousel-slide">
+              <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=700&q=85" alt="Strawberry Bliss Cake" />
+            </div>
+            <div class="carousel-slide">
+              <img src="https://images.unsplash.com/photo-1616541823729-00fe0aacd32c?w=700&q=85" alt="Red Velvet Cake" />
+            </div>
+            <div class="carousel-slide">
+              <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?w=700&q=85" alt="Mango Tango Cake" />
+            </div>
+          </div>
+          <!-- Carousel Controls -->
+          <button class="carousel-btn carousel-prev" id="carouselPrev" aria-label="Previous">&#8592;</button>
+          <button class="carousel-btn carousel-next" id="carouselNext" aria-label="Next">&#8594;</button>
+          <!-- Dots -->
+          <div class="carousel-dots" id="carouselDots"></div>
         </div>
         <div class="hero-float-card">
           <div class="hero-float-card-icon">🎂</div>
@@ -120,9 +141,8 @@
         <button class="filter-tab active" data-filter="all">All Cakes</button>
         <button class="filter-tab" data-filter="Bestseller">Bestseller</button>
         <button class="filter-tab" data-filter="Premium">Premium</button>
-        <button class="filter-tab" data-filter="Seasonal">Seasonal</button>
+        <button class="filter-tab" data-filter="Brownies">Brownies</button>
         <button class="filter-tab" data-filter="Classic">Classic</button>
-        <button class="filter-tab" data-filter="Artisan">Artisan</button>
       </div>
 
       <div class="products-grid" id="productsGrid">
@@ -180,7 +200,7 @@
       <div class="footer-inner">
         <div class="footer-top">
           <div class="footer-brand">
-            <div class="footer-brand-name">🎂 Sample </div>
+            <div class="footer-brand-name">🎂 Mr Pastry</div>
             <p class="footer-brand-desc">
               Handcrafted cakes baked with love for every milestone. From birthdays to weddings, we make every celebration sweeter.
             </p>
@@ -205,7 +225,7 @@
         </div>
         <hr class="footer-divider" />
         <div class="footer-bottom">
-          <span>© 2025 SweetCraft Bakery. All rights reserved.</span>
+          <span>© 2025 Mr Pastry. All rights reserved.</span>
           <span>Made with 🧁 and JavaScript</span>
         </div>
       </div>

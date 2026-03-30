@@ -3,7 +3,7 @@
 // Google Form URL — replace with your actual form's pre-filled URL
 const GOOGLE_FORM_BASE =
   "https://docs.google.com/forms/d/e/1FAIpQLSdPwthb9dYEz8Q0mei5AskzzfI_HF_5UzmalnaC95SFRlSISg/viewform?usp=pp_url&entry.1200124981=";
-/*
+/**
  * Formats a number as Indian Rupees
  */
 function formatPrice(amount) {
@@ -15,7 +15,7 @@ function formatPrice(amount) {
  */
 function openOrderForm(productName) {
   const url = GOOGLE_FORM_BASE + encodeURIComponent(productName);
-  window.open(url, "_blank");
+  window.open(url, "_blank", "noopener,noreferrer");
 }
 
 /**
@@ -37,6 +37,57 @@ function initScrollTop() {
   btn.addEventListener("click", () => window.scrollTo({ top: 0, behavior: "smooth" }));
 }
 
+// ===== CAROUSEL =====
+
+function initCarousel() {
+  const track = document.getElementById("carouselTrack");
+  const dotsContainer = document.getElementById("carouselDots");
+  const prevBtn = document.getElementById("carouselPrev");
+  const nextBtn = document.getElementById("carouselNext");
+  if (!track) return;
+
+  const slides = track.querySelectorAll(".carousel-slide");
+  const total = slides.length;
+  let current = 0;
+  let autoTimer = null;
+
+  // Build dots
+  slides.forEach((_, i) => {
+    const dot = document.createElement("button");
+    dot.className = "carousel-dot" + (i === 0 ? " active" : "");
+    dot.setAttribute("aria-label", `Slide ${i + 1}`);
+    dot.addEventListener("click", () => goTo(i));
+    dotsContainer.appendChild(dot);
+  });
+
+  function updateDots() {
+    dotsContainer.querySelectorAll(".carousel-dot").forEach((d, i) => {
+      d.classList.toggle("active", i === current);
+    });
+  }
+
+  function goTo(index) {
+    current = (index + total) % total;
+    track.style.transform = `translateX(-${current * 100}%)`;
+    updateDots();
+  }
+
+  prevBtn.addEventListener("click", () => { goTo(current - 1); resetAuto(); });
+  nextBtn.addEventListener("click", () => { goTo(current + 1); resetAuto(); });
+
+  // Touch / swipe support
+  let startX = 0;
+  track.addEventListener("touchstart", (e) => { startX = e.touches[0].clientX; }, { passive: true });
+  track.addEventListener("touchend", (e) => {
+    const diff = startX - e.changedTouches[0].clientX;
+    if (Math.abs(diff) > 40) { diff > 0 ? goTo(current + 1) : goTo(current - 1); resetAuto(); }
+  });
+
+  function autoPlay() { goTo(current + 1); }
+  function resetAuto() { clearInterval(autoTimer); autoTimer = setInterval(autoPlay, 3500); }
+  resetAuto();
+}
+
 // ===== INDEX PAGE =====
 
 function initHomepage() {
@@ -46,6 +97,7 @@ function initHomepage() {
   initFilterTabs();
   initScrollTop();
   initHeroScroll();
+  initCarousel();
 }
 
 /**
@@ -120,6 +172,8 @@ function initFilterTabs() {
           (p) => p.tag.toLowerCase() === filter.toLowerCase()
         );
         renderProducts(filtered);
+        console.log(filtered);
+        
       }
     });
   });
@@ -159,7 +213,7 @@ function initDetailPage() {
   }
 
   // Update page title
-  document.title = `${product.name} — SweetCraft Bakery`;
+  document.title = `${product.name} — Mr Pastry`;
 
   // Update breadcrumb
   const bcProduct = document.getElementById("bcProduct");
