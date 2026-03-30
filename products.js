@@ -11,8 +11,8 @@ const products = [
     serves: "8–10",
     tag: "BestSeller",
     emoji: "❤️",
-    image: "/images/Red Velvet Royale.jpg",
-    thumb: "/images/Red-Velvet-Royale-1.jpg",
+    image: "https://i.pinimg.com/1200x/5e/93/37/5e93372015c07a05e92e69f635c170ef.jpg",
+    thumb: "https://i.pinimg.com/736x/ee/6e/f5/ee6ef5cbf05b16e404215abafd2eb24a.jpg",
   },
 
   {
@@ -26,8 +26,8 @@ const products = [
     serves: "8–10",
     tag: "BestSeller",
     emoji: "🍒",
-    image: "/images/Black Forest Cake.jpg",
-    thumb: "/images/Black Forest Cake-1.jpg",
+    image: "https://i.pinimg.com/736x/de/c3/54/dec3547435d522d794358e88e86602ba.jpg",
+    thumb: "https://i.pinimg.com/736x/fd/2f/d4/fd2fd4ce9503a7dd5e8e9209d1806911.jpg",
   },
 
   {
@@ -41,8 +41,8 @@ const products = [
     serves: "8–10",
     tag: "BestSeller",
     emoji: "🤍",
-    image: "/images/White Forest Cake.jpg",
-    thumb: "/images/White Forest Cake-1.jpg",
+    image: "https://i.pinimg.com/736x/b5/71/df/b571df2ebe6dabf77abbc03ab8489bd6.jpg",
+    thumb: "https://i.pinimg.com/1200x/14/cf/d3/14cfd37864e29a06ec593aae75ba228a.jpg",
   },
 
   {
@@ -56,8 +56,8 @@ const products = [
     serves: "8–10",
     tag: "Premium",
     emoji: "🍫",
-    image: "/images/Choco Truffle Cake.jpg",
-    thumb: "/images/Choco Truffle Cake-1.jpg",
+    image: "https://i.pinimg.com/1200x/17/20/f5/1720f5268c08a56a7365f325d92aacd9.jpg",
+    thumb: "https://i.pinimg.com/736x/3b/ca/3b/3bca3b2ab19b876c1c27755850034554.jpg",
   },
 
   {
@@ -71,8 +71,8 @@ const products = [
     serves: "8–10",
     tag: "BestSeller",
     emoji: "🍯",
-    image: "/images/Butterscotch Cake.jpg",
-    thumb: "/images/Butterscotch Cake-1.jpg",
+    image: "https://i.pinimg.com/736x/91/ee/92/91ee927828de3f587de9d4b207b8c797.jpg",
+    thumb: "https://i.pinimg.com/1200x/59/cb/78/59cb787d74ca7492a47093d64d99d8d5.jpg",
   },
 
   {
@@ -86,8 +86,8 @@ const products = [
     serves: "8–10",
     tag: "Classic",
     emoji: "🍍",
-    image: "/images/Pineapple Cake.jpg",
-    thumb: "/images/Pineapple Cake-1.jpg",
+    image: "https://i.pinimg.com/736x/e4/1a/38/e41a38224dfc9fc3dc5251bc38ec7393.jpg",
+    thumb: "https://i.pinimg.com/1200x/8a/e8/ca/8ae8ca6d0dcd4ebdb3132ac9b73a8854.jpg",
   },
 
   {
@@ -101,8 +101,8 @@ const products = [
     serves: "8–10",
     tag: "Classic",
     emoji: "🍇",
-    image: "/images/Grape Cake.jpg",
-    thumb: "/images/Grape Cake-1.jpg",
+    image: "https://i.pinimg.com/736x/9b/67/da/9b67da3bfc1544a9f41d616374a26872.jpg",
+    thumb: "https://i.pinimg.com/1200x/ac/2f/b7/ac2fb77d8500f98ca120e3d6eaf570ad.jpg",
   },
   {
   id: "blueberry-bliss-cake",
